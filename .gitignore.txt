@@ -1,0 +1,11 @@
+# Carpetas de Unreal que NO deben subirse
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+
+# Archivos temporales
+*.sln
+*.suo
+*.user

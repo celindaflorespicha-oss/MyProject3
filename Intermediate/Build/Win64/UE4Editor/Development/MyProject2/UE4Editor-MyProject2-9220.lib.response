@@ -1,0 +1,25 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-MyProject2-9220.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\MyProject2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\Dado.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2Block.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2BlockGrid.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2GameMode.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2Pawn.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2PlayerController.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\Dado.gen.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2.init.gen.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2Block.gen.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2BlockGrid.gen.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2GameMode.gen.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2Pawn.gen.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\MyProject2PlayerController.gen.cpp.obj"
+"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\Default.rc2.res"
+/OUT:"C:\Users\hp\OneDrive\Documentos\Unreal Projects\laboratrorio3,,\puzze_6\MyProject2\Intermediate\Build\Win64\UE4Editor\Development\MyProject2\UE4Editor-MyProject2-9220.lib"
