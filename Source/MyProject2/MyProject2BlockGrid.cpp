@@ -41,6 +41,10 @@ void AMyProject2BlockGrid::BeginPlay()
 	for (int32 Puntaje : PlayerScores) {
 		UE_LOG(LogTemp, Warning, TEXT("Score: %d"), Puntaje);
 	}
+
+	// crear una lista de dados en el blockgrit
+	TArray<ADado*> ListaDados;
+
 	// Loop to spawn each block
 	for (int32 BlockIndex = 0; BlockIndex < NumBlocks; BlockIndex++)
 	{
@@ -51,6 +55,12 @@ void AMyProject2BlockGrid::BeginPlay()
 		const FVector BlockLocation = FVector(XOffset, YOffset, 0.f) + GetActorLocation();
 
 		ADado* NewDado = GetWorld()->SpawnActor<ADado>(BlockLocation, FRotator(0, 0, 0));
+
+		// insertar en la lista (lista add(newBlock))
+		if (NewDado != nullptr)
+		{
+			ListaDados.Add(NewDado);
+		}
 
 		// Código original del bloque (mantenido y comentado)
 		// AMyProject2Block* NewBlock = GetWorld()->SpawnActor<AMyProject2Block>(BlockLocation, FRotator(0,0,0));
@@ -63,11 +73,13 @@ void AMyProject2BlockGrid::BeginPlay()
 
 			NewDado->OwningGrid = this;
 
-		
 			// NewBlock->CambiarTamanio(BlockSize);
 			// NewBlock->OwningGrid = this;
 		}
 	}
+
+	// log mostrar la cantidad de elementos en la listaDado siempre desde la variable
+	UE_LOG(LogTemp, Warning, TEXT("Cantidad total de dados en la lista: %d"), ListaDados.Num());
 }
 
 void AMyProject2BlockGrid::AddScore(int32 PuntosASumar)
