@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeMyProject2BlockGrid() {}
 	UPackage* Z_Construct_UPackage__Script_MyProject2();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UTextRenderComponent_NoRegister();
+	MYPROJECT2_API UClass* Z_Construct_UClass_ADado_NoRegister();
 // End Cross Module References
 	void AMyProject2BlockGrid::StaticRegisterNativesAMyProject2BlockGrid()
 	{
@@ -69,6 +70,11 @@ void EmptyLinkFunctionForGeneratedCodeMyProject2BlockGrid() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BlockSize_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BlockSize;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ListaDados_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ListaDados_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_ListaDados;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -162,6 +168,14 @@ void EmptyLinkFunctionForGeneratedCodeMyProject2BlockGrid() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_BlockSize = { "BlockSize", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyProject2BlockGrid, BlockSize), METADATA_PARAMS(Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_BlockSize_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_BlockSize_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_ListaDados_Inner = { "ListaDados", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_ADado_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_ListaDados_MetaData[] = {
+		{ "Category", "Grid" },
+		{ "ModuleRelativePath", "MyProject2BlockGrid.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_ListaDados = { "ListaDados", nullptr, (EPropertyFlags)0x0010000000000015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyProject2BlockGrid, ListaDados), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_ListaDados_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_ListaDados_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyProject2BlockGrid_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_DummyRoot,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_ScoreText,
@@ -172,6 +186,8 @@ void EmptyLinkFunctionForGeneratedCodeMyProject2BlockGrid() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_BlockSpacing,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_points,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_BlockSize,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_ListaDados_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyProject2BlockGrid_Statics::NewProp_ListaDados,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMyProject2BlockGrid_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMyProject2BlockGrid>::IsAbstract,
@@ -200,7 +216,7 @@ void EmptyLinkFunctionForGeneratedCodeMyProject2BlockGrid() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyProject2BlockGrid, 3977126493);
+	IMPLEMENT_CLASS(AMyProject2BlockGrid, 2388814437);
 	template<> MYPROJECT2_API UClass* StaticClass<AMyProject2BlockGrid>()
 	{
 		return AMyProject2BlockGrid::StaticClass();

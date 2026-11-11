@@ -22,7 +22,15 @@ void EmptyLinkFunctionForGeneratedCodeDado() {}
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	MYPROJECT2_API UClass* Z_Construct_UClass_AMyProject2BlockGrid_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 // End Cross Module References
+	DEFINE_FUNCTION(ADado::execApplyVerticalImpulse)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ApplyVerticalImpulse();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ADado::execBlockClicked)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_ClickedComp);
@@ -43,10 +51,34 @@ void EmptyLinkFunctionForGeneratedCodeDado() {}
 	{
 		UClass* Class = ADado::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "ApplyVerticalImpulse", &ADado::execApplyVerticalImpulse },
 			{ "BlockClicked", &ADado::execBlockClicked },
 			{ "ladoCara", &ADado::execladoCara },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ADado_ApplyVerticalImpulse_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADado_ApplyVerticalImpulse_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Dado" },
+		{ "ModuleRelativePath", "Dado.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADado_ApplyVerticalImpulse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADado, nullptr, "ApplyVerticalImpulse", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADado_ApplyVerticalImpulse_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADado_ApplyVerticalImpulse_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ADado_ApplyVerticalImpulse()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ADado_ApplyVerticalImpulse_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ADado_BlockClicked_Statics
 	{
@@ -146,6 +178,19 @@ void EmptyLinkFunctionForGeneratedCodeDado() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OwningGrid_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OwningGrid;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsJumping_MetaData[];
+#endif
+		static void NewProp_bIsJumping_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsJumping;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StartLocation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_StartLocation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_JumpTimer_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_JumpTimer;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -155,6 +200,7 @@ void EmptyLinkFunctionForGeneratedCodeDado() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_MyProject2,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ADado_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ADado_ApplyVerticalImpulse, "ApplyVerticalImpulse" }, // 1419644326
 		{ &Z_Construct_UFunction_ADado_BlockClicked, "BlockClicked" }, // 635832966
 		{ &Z_Construct_UFunction_ADado_ladoCara, "ladoCara" }, // 1628058572
 	};
@@ -174,7 +220,7 @@ void EmptyLinkFunctionForGeneratedCodeDado() {}
 		{ "ToolTip", "Dummy root component" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADado_Statics::NewProp_DummyRoot = { "DummyRoot", nullptr, (EPropertyFlags)0x00400000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADado, DummyRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADado_Statics::NewProp_DummyRoot_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADado_Statics::NewProp_DummyRoot_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADado_Statics::NewProp_DummyRoot = { "DummyRoot", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADado, DummyRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADado_Statics::NewProp_DummyRoot_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADado_Statics::NewProp_DummyRoot_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADado_Statics::NewProp_BlockMesh_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -185,7 +231,7 @@ void EmptyLinkFunctionForGeneratedCodeDado() {}
 		{ "ToolTip", "StaticMesh component for the clickable block" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADado_Statics::NewProp_BlockMesh = { "BlockMesh", nullptr, (EPropertyFlags)0x00400000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADado, BlockMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADado_Statics::NewProp_BlockMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADado_Statics::NewProp_BlockMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADado_Statics::NewProp_BlockMesh = { "BlockMesh", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADado, BlockMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADado_Statics::NewProp_BlockMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADado_Statics::NewProp_BlockMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADado_Statics::NewProp_ladoDado_MetaData[] = {
 		{ "Category", "Dado" },
@@ -208,12 +254,40 @@ void EmptyLinkFunctionForGeneratedCodeDado() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADado_Statics::NewProp_OwningGrid = { "OwningGrid", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADado, OwningGrid), Z_Construct_UClass_AMyProject2BlockGrid_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADado_Statics::NewProp_OwningGrid_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADado_Statics::NewProp_OwningGrid_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADado_Statics::NewProp_bIsJumping_MetaData[] = {
+		{ "Category", "Dado" },
+		{ "Comment", "// --- NUEVAS VARIABLES Y FUNCIONES A?ADIDAS ---\n" },
+		{ "ModuleRelativePath", "Dado.h" },
+		{ "ToolTip", "--- NUEVAS VARIABLES Y FUNCIONES A?ADIDAS ---" },
+	};
+#endif
+	void Z_Construct_UClass_ADado_Statics::NewProp_bIsJumping_SetBit(void* Obj)
+	{
+		((ADado*)Obj)->bIsJumping = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADado_Statics::NewProp_bIsJumping = { "bIsJumping", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADado), &Z_Construct_UClass_ADado_Statics::NewProp_bIsJumping_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADado_Statics::NewProp_bIsJumping_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADado_Statics::NewProp_bIsJumping_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADado_Statics::NewProp_StartLocation_MetaData[] = {
+		{ "ModuleRelativePath", "Dado.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ADado_Statics::NewProp_StartLocation = { "StartLocation", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADado, StartLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_ADado_Statics::NewProp_StartLocation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADado_Statics::NewProp_StartLocation_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADado_Statics::NewProp_JumpTimer_MetaData[] = {
+		{ "ModuleRelativePath", "Dado.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADado_Statics::NewProp_JumpTimer = { "JumpTimer", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADado, JumpTimer), METADATA_PARAMS(Z_Construct_UClass_ADado_Statics::NewProp_JumpTimer_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADado_Statics::NewProp_JumpTimer_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADado_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADado_Statics::NewProp_DummyRoot,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADado_Statics::NewProp_BlockMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADado_Statics::NewProp_ladoDado,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADado_Statics::NewProp_Value,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADado_Statics::NewProp_OwningGrid,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADado_Statics::NewProp_bIsJumping,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADado_Statics::NewProp_StartLocation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADado_Statics::NewProp_JumpTimer,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ADado_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ADado>::IsAbstract,
@@ -242,7 +316,7 @@ void EmptyLinkFunctionForGeneratedCodeDado() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADado, 53190951);
+	IMPLEMENT_CLASS(ADado, 1043636194);
 	template<> MYPROJECT2_API UClass* StaticClass<ADado>()
 	{
 		return ADado::StaticClass();

@@ -6,9 +6,11 @@
 #include "GameFramework/Actor.h"
 #include "MyProject2BlockGrid.generated.h"
 
+class ADado;
+
 /** Class used to spawn blocks and manage score */
 UCLASS(minimalapi)
-class AMyProject2BlockGrid : public AActor
+class AMyProject2BlockGrid : public AActor   // <-- espacio entre ':' y 'public'
 {
 	GENERATED_BODY()
 
@@ -22,6 +24,7 @@ class AMyProject2BlockGrid : public AActor
 
 public:
 	AMyProject2BlockGrid();
+
 	UPROPERTY(Category = Grid, EditAnywhere, BlueprintReadOnly)
 		/** How many blocks have been clicked */
 		int32 Score;
@@ -29,26 +32,33 @@ public:
 	/** Number of blocks along each side of grid */
 	UPROPERTY(Category = Grid, EditAnywhere, BlueprintReadOnly)
 		int32 Size;
+
 	UPROPERTY(Category = Grid, EditAnywhere, BlueprintReadOnly)
 		int32 Rows;
+
 	UPROPERTY(Category = Grid, EditAnywhere, BlueprintReadOnly)
 		int32 Columns;
+
 	/** Spacing of blocks */
 	UPROPERTY(Category = Grid, EditAnywhere, BlueprintReadOnly)
 		float BlockSpacing;
+
 	UPROPERTY(Category = Grid, EditAnywhere, BlueprintReadOnly)
 		int32 points;
+
 	UPROPERTY(Category = Grid, EditAnywhere, BlueprintReadOnly)
 		float BlockSize;
+
+	UPROPERTY(Category = Grid, EditAnywhere, BlueprintReadOnly)
+		TArray<ADado*> ListaDados;
+
 protected:
 	// Begin AActor interface
 	virtual void BeginPlay() override;
 	// End AActor interface
 
 public:
-
 	/** Handle the block being clicked */
-	
 	void AddScore(int32 PuntosASumar);
 
 	/** Returns DummyRoot subobject **/

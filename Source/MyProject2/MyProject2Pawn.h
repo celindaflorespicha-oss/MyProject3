@@ -6,7 +6,7 @@
 #include "GameFramework/Pawn.h"
 #include "MyProject2Pawn.generated.h"
 
-UCLASS(config=Game)
+UCLASS(config = Game)
 class AMyProject2Pawn : public APawn
 {
 	GENERATED_UCLASS_BODY()
@@ -25,7 +25,7 @@ protected:
 	void TraceForBlock(const FVector& Start, const FVector& End, bool bDrawDebugHelpers);
 
 	UPROPERTY(EditInstanceOnly, BlueprintReadWrite)
-	class AMyProject2Block* CurrentBlockFocus;
+	 class AMyProject2Block* CurrentBlockFocus;
 	UPROPERTY(EditInstanceOnly, BlueprintReadWrite)
-		class ADado* CurrentDiceFocus;
+	class ADado* CurrentDiceFocus;
 };

@@ -18,12 +18,14 @@ struct FKey;
 #define MyProject2_Source_MyProject2_Dado_h_14_SPARSE_DATA
 #define MyProject2_Source_MyProject2_Dado_h_14_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execApplyVerticalImpulse); \
 	DECLARE_FUNCTION(execBlockClicked); \
 	DECLARE_FUNCTION(execladoCara);
 
 
 #define MyProject2_Source_MyProject2_Dado_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execApplyVerticalImpulse); \
 	DECLARE_FUNCTION(execBlockClicked); \
 	DECLARE_FUNCTION(execladoCara);
 
@@ -70,11 +72,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADado)
 
 
-#define MyProject2_Source_MyProject2_Dado_h_14_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__DummyRoot() { return STRUCT_OFFSET(ADado, DummyRoot); } \
-	FORCEINLINE static uint32 __PPO__BlockMesh() { return STRUCT_OFFSET(ADado, BlockMesh); }
-
-
+#define MyProject2_Source_MyProject2_Dado_h_14_PRIVATE_PROPERTY_OFFSET
 #define MyProject2_Source_MyProject2_Dado_h_11_PROLOG
 #define MyProject2_Source_MyProject2_Dado_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

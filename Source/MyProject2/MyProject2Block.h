@@ -12,13 +12,13 @@ class AMyProject2Block : public AActor  //herencia
 {
 	GENERATED_BODY()
 
-	/** Dummy root component */
-	UPROPERTY(Category = Block, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	class USceneComponent* DummyRoot;
+		/** Dummy root component */
+		UPROPERTY(Category = Block, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		class USceneComponent* DummyRoot;
 
 	/** StaticMesh component for the clickable block */
 	UPROPERTY(Category = Block, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	class UStaticMeshComponent* BlockMesh;
+		class UStaticMeshComponent* BlockMesh;
 
 public:
 	AMyProject2Block();
@@ -28,27 +28,27 @@ public:
 
 	/** Pointer to white material used on the focused block */
 	UPROPERTY()
-	class UMaterial* BaseMaterial;
+		class UMaterial* BaseMaterial;
 
 	/** Pointer to blue material used on inactive blocks */
 	UPROPERTY()
-	class UMaterialInstance* BlueMaterial;
+		class UMaterialInstance* BlueMaterial;
 
 	/** Pointer to orange material used on active blocks */
 	UPROPERTY()
-	class UMaterialInstance* OrangeMaterial;
+		class UMaterialInstance* OrangeMaterial;
 
 	/** Grid that owns us */
 	UPROPERTY()
-	class AMyProject2BlockGrid* OwningGrid;
+		class AMyProject2BlockGrid* OwningGrid;
 
 	/** Handle the block being clicked */
 	UFUNCTION()
-	void BlockClicked(UPrimitiveComponent* ClickedComp, FKey ButtonClicked);
+		void BlockClicked(UPrimitiveComponent* ClickedComp, FKey ButtonClicked);
 
 	/** Handle the block being touched  */
 	UFUNCTION()
-	void OnFingerPressedBlock(ETouchIndex::Type FingerIndex, UPrimitiveComponent* TouchedComponent);
+		void OnFingerPressedBlock(ETouchIndex::Type FingerIndex, UPrimitiveComponent* TouchedComponent);
 
 	void HandleClicked();
 
@@ -56,7 +56,7 @@ public:
 
 	void CambiarTamanio(float newSize);
 	void Girar(float angulo);
-	
+
 
 public:
 	/** Returns DummyRoot subobject **/

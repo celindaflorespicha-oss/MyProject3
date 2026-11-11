@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define MYPROJECT2_MyProject2BlockGrid_generated_h
 
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_SPARSE_DATA
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_RPC_WRAPPERS
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_INCLASS_NO_PURE_DECLS \
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_SPARSE_DATA
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_RPC_WRAPPERS
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyProject2BlockGrid(); \
 	friend struct Z_Construct_UClass_AMyProject2BlockGrid_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AMyProject2BlockGrid)
 
 
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_INCLASS \
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAMyProject2BlockGrid(); \
 	friend struct Z_Construct_UClass_AMyProject2BlockGrid_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AMyProject2BlockGrid)
 
 
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_STANDARD_CONSTRUCTORS \
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	MYPROJECT2_API AMyProject2BlockGrid(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMyProject2BlockGrid) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_ENHANCED_CONSTRUCTORS \
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	MYPROJECT2_API AMyProject2BlockGrid(AMyProject2BlockGrid&&); \
@@ -58,32 +58,32 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMyProject2BlockGrid)
 
 
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_PRIVATE_PROPERTY_OFFSET \
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__DummyRoot() { return STRUCT_OFFSET(AMyProject2BlockGrid, DummyRoot); } \
 	FORCEINLINE static uint32 __PPO__ScoreText() { return STRUCT_OFFSET(AMyProject2BlockGrid, ScoreText); }
 
 
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_10_PROLOG
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_GENERATED_BODY_LEGACY \
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_12_PROLOG
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_PRIVATE_PROPERTY_OFFSET \
-	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_SPARSE_DATA \
-	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_RPC_WRAPPERS \
-	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_INCLASS \
-	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_STANDARD_CONSTRUCTORS \
+	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_PRIVATE_PROPERTY_OFFSET \
+	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_SPARSE_DATA \
+	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_RPC_WRAPPERS \
+	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_INCLASS \
+	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_GENERATED_BODY \
+#define MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_PRIVATE_PROPERTY_OFFSET \
-	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_SPARSE_DATA \
-	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_INCLASS_NO_PURE_DECLS \
-	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_13_ENHANCED_CONSTRUCTORS \
+	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_PRIVATE_PROPERTY_OFFSET \
+	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_SPARSE_DATA \
+	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_INCLASS_NO_PURE_DECLS \
+	MyProject2_Source_MyProject2_MyProject2BlockGrid_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
